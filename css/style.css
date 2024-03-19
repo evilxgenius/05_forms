@@ -1,9 +1,62 @@
 html {
     background-color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 320;
 }
 
 .wrapper {
     max-width: 1200px;
     background-color: white;
     margin: 30px auto;
+}
+
+.header {
+    padding: 13px 25px 13px 20px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo-wrap > a {
+    display: inline-block;
+}
+
+.logo-wrap__logo {
+    width: 75px;
+    vertical-align: middle;
+}
+
+.logo-wrap__heading {
+    display: inline;
+    vertical-align: middle;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.menu-wrap > .menu {
+    display: flex;
+    align-items: center;
+    font-weight: 370;
+}
+
+.menu-wrap .menu__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.menu-wrap .menu__item {
+    text-transform: uppercase;
+}
+
+.menu-wrap .menu__item:hover {
+    color: darkred;
 }
