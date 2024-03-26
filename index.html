@@ -6,25 +6,127 @@
     <title>HomeTask#5 Forms</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="./scripts/main.js" defer></script>
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
         <div class="logo-wrap">
-            <a href="#">
+            <a href="./index.html">
                 <img class="logo-wrap__logo" src="./images/logo.png" alt="logotype">
                 <h1 class="logo-wrap__heading">CAR SEARCH</h1>
             </a>
         </div>
         <div class="menu-wrap">
             <ul class="menu">
-                <li class="menu__item"><a href="#" class="menu__link">search</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">registration</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">log in</a></li>
+                <li class="menu__item">
+                    <label class="manu__search-open search-open">
+                        <span class="search-open__label">SEARCH</span>
+                        <input type="checkbox" class="search-open__checkbox">
+                    </label>
+                </li>
+                <li class="menu__item"><a href="./registration.html" class="menu__link">registration</a></li>
+                <li class="menu__item"><a href="./session.html" class="menu__link">log in</a></li>
             </ul>
         </div>
     </header>
     <main class="main">
+        <aside class="search-wrap">
+            <form action="https://fom.in.ua/echo" class="search__form search-form">
+                <!-- Body type.-->
+                <div class="search-form__field-wrapper">
+                    <span class="search-form__placeholder">body</span>
+                    <select name="body" class="search-form__select">
+                        <option value=""></option>
+                        <option value="Седан">Седан</option>
+                        <option value="Хечбек">Хечбек</option>
+                        <option value="Купе">Купе</option>
+                        <option value="Универсал">Универсал</option>
+                    </select>
+                </div>
+                <!-- Car brand.-->
+                <div class="search-form__field-wrapper">
+                    <span class="search-form__placeholder">brand</span>
+                    <select name="brand" class="search-form__select">
+                        <option value=""></option>
+                        <option value="Mitsubishi">Mitsubishi</option>
+                        <option value="Opel">Opel</option>
+                        <option value="Lanos">Lanos</option>
+                        <option value="Ford">Ford</option>
+                    </select>
+                </div>
+                <!-- Country of manufacture.-->
+                <div class="search-form__field-wrapper">
+                    <span class="search-form__placeholder">country</span>
+                    <select name="country" class="search-form__select">
+                        <option value=""></option>
+                        <option value="USA">USA</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Deutschland">Deutschland</option>
+                    </select>
+                </div>
+                <!-- Price (from and to).-->
+                <div class="search-form__field-wrapper">
+                    <span class="search-form__placeholder">min price</span>
+                    <input name="price_min" type="number" min="0" class="search-form__input">
+                </div>
+                <div class="search-form__field-wrapper">
+                    <span class="search-form__placeholder">max price</span>
+                    <input name="price_max" type="number" min="1" class="search-form__input">
+                </div>
+                <!-- Year of release (from and to).-->
+                <div class="search-form__field-wrapper">
+                    <span class="search-form__placeholder">min year</span>
+                    <input name="year_min" type="number" value="1900" min="1900" class="search-form__input">
+                </div>
+                <div class="search-form__field-wrapper">
+                    <span class="search-form__placeholder">max year</span>
+                    <input name="year_max" type="number" value="2024" min="1900" class="search-form__input">
+                </div>
+                <!-- Type of fuel.-->
+                <div class="search-form__field-wrapper">
+                    <span class="search-form__placeholder">fuel</span>
+                    <select name="fuel" class="search-form__select">
+                        <option value=""></option>
+                        <option value="diesel">Diesel</option>
+                        <option value="gasoline">Gasoline</option>
+                    </select>
+                </div>
+                <!-- Type of gearbox.-->
+                <div class="search-form__field-wrapper">
+                    <span class="search-form__placeholder">gearbox</span>
+                    <select name="gearbox" class="search-form__select">
+                        <option value=""></option>
+                        <option value="manual">Manual</option>
+                        <option value="automatic">Automatic</option>
+                    </select>
+                </div>
+                <!-- Conditions (Bit, In credit, Uncleared, etc. Several items can be selected at the same time).-->
+                <div class="search-form__field-wrapper">
+                    <span class="search-form__placeholder">conditions</span>
+                    <select multiple name="conditions" class="search-form__select search-form__select--multiple">
+                        <option value="bit">Bit</option>
+                        <option value="in credit">In credit</option>
+                        <option value="uncleared">Uncleared</option>
+                    </select>
+                </div>
+                <!-- Comfort (Sunroof, Leather interior, etc.).-->
+                <div class="search-form__field-wrapper">
+                    <span class="search-form__placeholder">comfort</span>
+                    <select multiple name="comfort" class="search-form__select search-form__select--multiple">
+                        <option value="Sunroof">Sunroof</option>
+                        <option value="leather_interior">Leather interior</option>
+                    </select>
+                </div>
+                <!-- Color.-->
+                <div class="search-form__field-wrapper">
+                    <span class="search-form__placeholder">color</span>
+                    <input type="color" name="cars_color" class="search-form__input-color">
+                </div>
+                <button type="submit" class="search-form__submit">search</button>
+            </form>
+        </aside>
         <div class="info">
             <div class="info__item">
                 <img src="./images/article-car-1.png" alt="car" class="info__picture">
@@ -111,12 +213,12 @@
                 <a href="#" class="products__btn">More</a>
             </div>
         </div>
+        <footer class="footer">
+            <p class="footer__text">
+                hometask #5 forms
+            </p>
+        </footer>
     </main>
-    <footer class="footer">
-        <p class="footer__text">
-            homeask #5 forms
-        </p>
-    </footer>
 </div>
 </body>
 </html>
