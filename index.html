@@ -9,7 +9,7 @@
     <script src="./scripts/main.js" defer></script>
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper full-height">
     <header class="header">
         <div class="logo-wrap">
             <a href="./index.html">
@@ -19,206 +19,24 @@
         </div>
         <div class="menu-wrap">
             <ul class="menu">
-                <li class="menu__item">
-                    <label class="manu__search-open search-open">
-                        <span class="search-open__label">SEARCH</span>
-                        <input type="checkbox" class="search-open__checkbox">
-                    </label>
-                </li>
                 <li class="menu__item"><a href="./registration.html" class="menu__link">registration</a></li>
                 <li class="menu__item"><a href="./session.html" class="menu__link">log in</a></li>
             </ul>
         </div>
     </header>
     <main class="main">
-        <aside class="search-wrap">
-            <form action="https://fom.in.ua/echo" class="search__form search-form">
-                <!-- Body type.-->
-                <div class="search-form__field-wrapper">
-                    <span class="search-form__placeholder">body</span>
-                    <select name="body" class="search-form__select">
-                        <option value=""></option>
-                        <option value="Седан">Седан</option>
-                        <option value="Хечбек">Хечбек</option>
-                        <option value="Купе">Купе</option>
-                        <option value="Универсал">Универсал</option>
-                    </select>
-                </div>
-                <!-- Car brand.-->
-                <div class="search-form__field-wrapper">
-                    <span class="search-form__placeholder">brand</span>
-                    <select name="brand" class="search-form__select">
-                        <option value=""></option>
-                        <option value="Mitsubishi">Mitsubishi</option>
-                        <option value="Opel">Opel</option>
-                        <option value="Lanos">Lanos</option>
-                        <option value="Ford">Ford</option>
-                    </select>
-                </div>
-                <!-- Country of manufacture.-->
-                <div class="search-form__field-wrapper">
-                    <span class="search-form__placeholder">country</span>
-                    <select name="country" class="search-form__select">
-                        <option value=""></option>
-                        <option value="USA">USA</option>
-                        <option value="Ukraine">Ukraine</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Deutschland">Deutschland</option>
-                    </select>
-                </div>
-                <!-- Price (from and to).-->
-                <div class="search-form__field-wrapper">
-                    <span class="search-form__placeholder">min price</span>
-                    <input name="price_min" type="number" min="0" class="search-form__input">
-                </div>
-                <div class="search-form__field-wrapper">
-                    <span class="search-form__placeholder">max price</span>
-                    <input name="price_max" type="number" min="1" class="search-form__input">
-                </div>
-                <!-- Year of release (from and to).-->
-                <div class="search-form__field-wrapper">
-                    <span class="search-form__placeholder">min year</span>
-                    <input name="year_min" type="number" value="1900" min="1900" class="search-form__input">
-                </div>
-                <div class="search-form__field-wrapper">
-                    <span class="search-form__placeholder">max year</span>
-                    <input name="year_max" type="number" value="2024" min="1900" class="search-form__input">
-                </div>
-                <!-- Type of fuel.-->
-                <div class="search-form__field-wrapper">
-                    <span class="search-form__placeholder">fuel</span>
-                    <select name="fuel" class="search-form__select">
-                        <option value=""></option>
-                        <option value="diesel">Diesel</option>
-                        <option value="gasoline">Gasoline</option>
-                    </select>
-                </div>
-                <!-- Type of gearbox.-->
-                <div class="search-form__field-wrapper">
-                    <span class="search-form__placeholder">gearbox</span>
-                    <select name="gearbox" class="search-form__select">
-                        <option value=""></option>
-                        <option value="manual">Manual</option>
-                        <option value="automatic">Automatic</option>
-                    </select>
-                </div>
-                <!-- Conditions (Bit, In credit, Uncleared, etc. Several items can be selected at the same time).-->
-                <div class="search-form__field-wrapper">
-                    <span class="search-form__placeholder">conditions</span>
-                    <select multiple name="conditions" class="search-form__select search-form__select--multiple">
-                        <option value="bit">Bit</option>
-                        <option value="in credit">In credit</option>
-                        <option value="uncleared">Uncleared</option>
-                    </select>
-                </div>
-                <!-- Comfort (Sunroof, Leather interior, etc.).-->
-                <div class="search-form__field-wrapper">
-                    <span class="search-form__placeholder">comfort</span>
-                    <select multiple name="comfort" class="search-form__select search-form__select--multiple">
-                        <option value="Sunroof">Sunroof</option>
-                        <option value="leather_interior">Leather interior</option>
-                    </select>
-                </div>
-                <!-- Color.-->
-                <div class="search-form__field-wrapper">
-                    <span class="search-form__placeholder">color</span>
-                    <input type="color" name="cars_color" class="search-form__input-color">
-                </div>
-                <button type="submit" class="search-form__submit">search</button>
-            </form>
-        </aside>
-        <div class="info">
-            <div class="info__item">
-                <img src="./images/article-car-1.png" alt="car" class="info__picture">
-                <p class="info__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis velit dolor pariatur quas possimus, autem natus molestiae totam perspiciatis voluptates nam ut quaerat quo recusandae modi eveniet quibusdam, dolores iure repudiandae? Tenetur sint at nisi minima cupiditate, alias ex, enim deleniti atque animi doloribus sapiente rem odio eum dignissimos laudantium recusandae, molestiae voluptatum! Tempore velit nisi enim quibusdam, repudiandae similique cumque iusto sit ab cum accusantium voluptatibus amet quia minima at! Quidem distinctio porro dignissimos rerum dolorem omnis quis nulla, cupiditate itaque quos voluptatum fuga? Eveniet minus placeat officiis harum saepe eaque ipsam mollitia cum necessitatibus accusamus veritatis blanditiis, excepturi unde vel iusto nam. Nihil delectus corporis alias placeat libero voluptatum asperiores ab et debitis accusamus harum dolorum exercitationem, tempore cum, repellat in ipsam quam aliquid, soluta saepe quas. Eos fugit, excepturi ea, aliquid animi dolores maiores quas distinctio iste corrupti eius suscipit cum illum quis sapiente reprehenderit porro hic mollitia reiciendis ratione sit ex? Ab fuga quaerat explicabo? Quam voluptate soluta velit error maiores alias earum corporis quos iure sit quae voluptatibus minus laudantium, cumque reiciendis eius quaerat, ratione dicta dolorum fugit voluptas! Asperiores, aliquam quibusdam officiis modi maxime beatae perspiciatis vel, illo quae sunt error tempora reiciendis. Inventore accusantium doloribus ex est beatae provident possimus iure ratione cupiditate iusto praesentium deleniti officiis ipsa ducimus aut, recusandae enim aliquid soluta! Eos ea nihil illum atque hic suscipit enim laborum itaque, repellendus ut incidunt dicta excepturi sint, voluptates dolore quam id! Ratione quasi tenetur pariatur, consequuntur mollitia recusandae placeat omnis quos fugiat dolor adipisci, voluptas expedita. Mollitia eum iste beatae minima exercitationem obcaecati vitae reprehenderit consequatur est earum sapiente nostrum perspiciatis, id, voluptate explicabo laborum, hic adipisci odio saepe optio? Assumenda expedita nisi ipsa in ipsam culpa, nihil maiores! Deserunt praesentium vitae corrupti earum? Iste eum amet repellat eos adipisci!
-                </p>
-            </div>
-            <div class="info__item">
-                <img src="./images/article-car-2.png" alt="car" class="info__picture">
-                <p class="info__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis velit dolor pariatur quas possimus, autem natus molestiae totam perspiciatis voluptates nam ut quaerat quo recusandae modi eveniet quibusdam, dolores iure repudiandae? Tenetur sint at nisi minima cupiditate, alias ex, enim deleniti atque animi doloribus sapiente rem odio eum dignissimos laudantium recusandae, molestiae voluptatum! Tempore velit nisi enim quibusdam, repudiandae similique cumque iusto sit ab cum accusantium voluptatibus amet quia minima at! Quidem distinctio porro dignissimos rerum dolorem omnis quis nulla, cupiditate itaque quos voluptatum fuga? Eveniet minus placeat officiis harum saepe eaque ipsam mollitia cum necessitatibus accusamus veritatis blanditiis, excepturi unde vel iusto nam. Nihil delectus corporis alias placeat libero voluptatum asperiores ab et debitis accusamus harum dolorum exercitationem, tempore cum, repellat in ipsam quam aliquid, soluta saepe quas. Eos fugit, excepturi ea, aliquid animi dolores maiores quas distinctio iste corrupti eius suscipit cum illum quis sapiente reprehenderit porro hic mollitia reiciendis ratione sit ex? Ab fuga quaerat explicabo? Quam voluptate soluta velit error maiores alias earum corporis quos iure sit quae voluptatibus minus laudantium, cumque reiciendis eius quaerat, ratione dicta dolorum fugit voluptas! Asperiores, aliquam quibusdam officiis modi maxime beatae perspiciatis vel, illo quae sunt error tempora reiciendis. Inventore accusantium doloribus ex est beatae provident possimus iure ratione cupiditate iusto praesentium deleniti officiis ipsa ducimus aut, recusandae enim aliquid soluta! Eos ea nihil illum atque hic suscipit enim laborum itaque, repellendus ut incidunt dicta excepturi sint, voluptates dolore quam id! Ratione quasi tenetur pariatur, consequuntur mollitia recusandae placeat omnis quos fugiat dolor adipisci, voluptas expedita. Mollitia eum iste beatae minima exercitationem obcaecati vitae reprehenderit consequatur est earum sapiente nostrum perspiciatis, id, voluptate explicabo laborum, hic adipisci odio saepe optio? Assumenda expedita nisi ipsa in ipsam culpa, nihil maiores! Deserunt praesentium vitae corrupti earum? Iste eum amet repellat eos adipisci!
-                </p>
+        <div class="main-wrap">
+            <aside class="filter">
+            </aside>
+            <div class="auto-list">
             </div>
         </div>
-        <div class="products">
-            <div class="products__item">
-                <img src="./images/car-1.jpeg" alt="car" class="products__picture">
-                <h3 class="products__heading">Product</h3>
-                <p class="products__decription">description</p>
-                <p class="products__code">0001</p>
-                <a href="#" class="products__btn">More</a>
-            </div>
-            <div class="products__item">
-                <img src="./images/car-2.jpeg" alt="car" class="products__picture">
-                <h3 class="products__heading">Product</h3>
-                <p class="products__decription">description</p>
-                <p class="products__code">0002</p>
-                <a href="#" class="products__btn">More</a>
-            </div>
-            <div class="products__item">
-                <img src="./images/car-3.jpeg" alt="car" class="products__picture">
-                <h3 class="products__heading">Product</h3>
-                <p class="products__decription">description</p>
-                <p class="products__code">0003</p>
-                <a href="#" class="products__btn">More</a>
-            </div>
-            <div class="products__item">
-                <img src="./images/car-4.jpeg" alt="car" class="products__picture">
-                <h3 class="products__heading">Product</h3>
-                <p class="products__decription">description</p>
-                <p class="products__code">0004</p>
-                <a href="#" class="products__btn">More</a>
-            </div>
-            <div class="products__item">
-                <img src="./images/car-5.jpeg" alt="car" class="products__picture">
-                <h3 class="products__heading">Product</h3>
-                <p class="products__decription">description</p>
-                <p class="products__code">0005</p>
-                <a href="#" class="products__btn">More</a>
-            </div>
-            <div class="products__item">
-                <img src="./images/car-6.jpeg" alt="car" class="products__picture">
-                <h3 class="products__heading">Product</h3>
-                <p class="products__decription">description</p>
-                <p class="products__code">0006</p>
-                <a href="#" class="products__btn">More</a>
-            </div>
-            <div class="products__item">
-                <img src="./images/car-7.jpeg" alt="car" class="products__picture">
-                <h3 class="products__heading">Product</h3>
-                <p class="products__decription">description</p>
-                <p class="products__code">0007</p>
-                <a href="#" class="products__btn">More</a>
-            </div>
-            <div class="products__item">
-                <img src="./images/car-8.jpeg" alt="car" class="products__picture">
-                <h3 class="products__heading">Product</h3>
-                <p class="products__decription">description</p>
-                <p class="products__code">0008</p>
-                <a href="#" class="products__btn">More</a>
-            </div>
-            <div class="products__item">
-                <img src="./images/car-9.jpeg" alt="car" class="products__picture">
-                <h3 class="products__heading">Product</h3>
-                <p class="products__decription">description</p>
-                <p class="products__code">0009</p>
-                <a href="#" class="products__btn">More</a>
-            </div>
-            <div class="products__item">
-                <img src="./images/car-10.jpeg" alt="car" class="products__picture">
-                <h3 class="products__heading">Product</h3>
-                <p class="products__decription">description</p>
-                <p class="products__code">0010</p>
-                <a href="#" class="products__btn">More</a>
-            </div>
-        </div>
-        <footer class="footer">
-            <p class="footer__text">
-                hometask #5 forms
-            </p>
-        </footer>
     </main>
+    <footer class="footer">
+        <p class="footer__text">
+            hometask #5 forms
+        </p>
+    </footer>
 </div>
 </body>
 </html>
