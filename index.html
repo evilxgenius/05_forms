@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HomeTask#5 Forms</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="./scripts/main.js" defer></script>
 </head>
 <body>
-<div class="wrapper full-height">
+<div class="wrapper">
     <header class="header">
         <div class="logo-wrap">
             <a href="./index.html">
@@ -19,17 +20,350 @@
         </div>
         <div class="menu-wrap">
             <ul class="menu">
-                <li class="menu__item"><a href="./registration.html" class="menu__link">registration</a></li>
-                <li class="menu__item"><a href="./session.html" class="menu__link">log in</a></li>
+                <li class="menu__item"><a href="pages/registration.html" class="menu__link">registration</a></li>
+                <li class="menu__item"><a href="pages/session.html" class="menu__link">log in</a></li>
             </ul>
         </div>
     </header>
     <main class="main">
-        <div class="main-wrap">
+        <div class="main-wrapper">
             <aside class="filter">
+                <form class="filter__form" action="https://fom.in.ua/echo">
+                    <div class="filter__item">
+                        <span class="filter__name">country</span>
+                        <select name="country" class="filter__select">
+                            <option></option>
+                            <option value="japan">Japan</option>
+                            <option value="usa">USA</option>
+                            <option value="germany">Germany</option>
+                        </select>
+                    </div>
+                    <div class="filter__item">
+                        <span class="filter__name">make</span>
+                        <div class="filter__select-dropdown">
+                            <select name="make" class="filter__select">
+                                <option></option>
+                                <option value="mitsubishi">Mitsubishi</option>
+                                <option value="ford">Ford</option>
+                                <option value="volkswagen">Volkswagen</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter__item">
+                        <span class="filter__name">body</span>
+                        <select name="body_style" class="filter__select">
+                            <option></option>
+                            <option value="sedan">Sedan</option>
+                            <option value="hatchback">Hatchback</option>
+                            <option value="pickup">Pickup</option>
+                        </select>
+                    </div>
+                    <div class="filter__item">
+                        <span class="filter__name">price</span>
+                        <input placeholder="min" name="price_min" type="number" class="filter__range-input">
+                        <input placeholder="max" name="price_max" type="number" class="filter__range-input">
+                    </div>
+                    <div class="filter__item">
+                        <span class="filter__name">years</span>
+                        <input placeholder="start" name="year_start" type="number" class="filter__range-input" min="1900" value="1900">
+                        <input placeholder="end" name="year_end" type="number" class="filter__range-input" max="2024" value="2024">
+                    </div>
+                    <div class="filter__item">
+                        <span class="filter__name">state</span>
+                        <label class="filter__label">
+                            <input class="filter_checkbox" type="checkbox" name="state" value="brought_usa">
+                            Brought from the USA
+                        </label>
+                        <label class="filter__label">
+                            <input class="filter_checkbox" type="checkbox" name="state" value="in_credit">
+                            In credit
+                        </label>
+                        <label class="filter__label">
+                            <input class="filter_checkbox" type="checkbox" name="state" value="uncleared">
+                            Uncleared
+                        </label>
+                        <label class="filter__label">
+                            <input class="filter_checkbox" type="checkbox" name="state" value="first_owner">
+                            First owner
+                        </label>
+                    </div>
+                    <div class="filter__item">
+                        <span class="filter__name">fuel</span>
+                        <label class="filter__label">
+                            <input class="filter__radio" type="radio" name="fuel" value="regular">
+                            Regular
+                        </label>
+                        <label class="filter__label">
+                            <input class="filter__radio" type="radio" name="fuel" value="electric">
+                            Electric
+                        </label>
+                        <label class="filter__label">
+                            <input class="filter__radio" type="radio" name="fuel" value="electric">
+                            Hybrid
+                        </label>
+                    </div>
+                    <div class="filter__item">
+                        <span class="filter__name">transmission</span>
+                        <label class="filter__label">
+                            <input class="filter__radio" type="radio" name="fuel" value="automatic">
+                            Automatic
+                        </label>
+                        <label class="filter__label">
+                            <input class="filter__radio" type="radio" name="fuel" value="manual">
+                            Manual
+                        </label>
+                    </div>
+                    <div class="filter__item">
+                        <span class="filter__name">color</span>
+                        <input name="color" type="color"/>
+                    </div>
+                    <div class="filter__item">
+                        <span class="filter__name">comfort</span>
+                        <select name="comfort" class="filter__select filter__select--multiple" multiple>
+                            <option value="ac">AC</option>
+                            <option value="abs">ABS</option>
+                            <option value="alarm">Alarm</option>
+                            <option value="second_key">Second key</option>
+                        </select>
+                    </div>
+                    <div class="filter__item">
+                        <button class="filter__submit" type="submit">apply</button>
+                    </div>
+                </form>
             </aside>
-            <div class="auto-list">
-            </div>
+            <ul class="automobile-list">
+                <li class="automobile-list__item auto">
+                    <img src="images/car-1.jpeg" alt="car" class="auto__image"/>
+                    <ul class="auto__info">
+                        <li class="auto__country">
+                            <span class="auto__info-key">Country:</span>
+                            <span class="auto__info-value">Japan</span>
+                        </li>
+                        <li class="auto__make">
+                            <span class="auto__info-key">Make:</span>
+                            <span class="auto__info-value">Mitsubishi</span>
+                        </li>
+                        <li class="auto__body">
+                            <span class="auto__info-key">Body:</span>
+                            <span class="auto__info-value">Sedan</span>
+                        </li>
+                        <li class="auto__year">
+                            <span class="auto__info-key">Year:</span>
+                            <span class="auto__info-value">2013</span>
+                        </li>
+                        <li class="auto__fuel">
+                            <span class="auto__info-key">Fuel:</span>
+                            <span class="auto__info-value">Regular</span>
+                        </li>
+                        <li class="auto__transmission">
+                            <span class="auto__info-key">Transmission:</span>
+                            <span class="auto__info-value">Automatic</span>
+                        </li>
+                        <li class="auto__comfort">
+                            <span class="auto__info-key">Comfort:</span>
+                            <span class="auto__info-value">AC, ABS, Alarm</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="automobile-list__item auto">
+                    <img src="images/car-2.jpeg" alt="car" class="auto__image"/>
+                    <ul class="auto__info">
+                        <li class="auto__country">
+                            <span class="auto__info-key">Country:</span>
+                            <span class="auto__info-value">USA</span>
+                        </li>
+                        <li class="auto__make">
+                            <span class="auto__info-key">Make:</span>
+                            <span class="auto__info-value">Ford</span>
+                        </li>
+                        <li class="auto__body">
+                            <span class="auto__info-key">Body:</span>
+                            <span class="auto__info-value">Hatchback</span>
+                        </li>
+                        <li class="auto__year">
+                            <span class="auto__info-key">Year:</span>
+                            <span class="auto__info-value">2017</span>
+                        </li>
+                        <li class="auto__fuel">
+                            <span class="auto__info-key">Fuel:</span>
+                            <span class="auto__info-value">Regular</span>
+                        </li>
+                        <li class="auto__transmission">
+                            <span class="auto__info-key">Transmission:</span>
+                            <span class="auto__info-value">Automatic</span>
+                        </li>
+                        <li class="auto__comfort">
+                            <span class="auto__info-key">Comfort:</span>
+                            <span class="auto__info-value">ABS, Alarm, Second Key</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="automobile-list__item auto">
+                    <img src="images/car-3.jpeg" alt="car" class="auto__image"/>
+                    <ul class="auto__info">
+                        <li class="auto__country">
+                            <span class="auto__info-key">Country:</span>
+                            <span class="auto__info-value">USA</span>
+                        </li>
+                        <li class="auto__make">
+                            <span class="auto__info-key">Make:</span>
+                            <span class="auto__info-value">Ford</span>
+                        </li>
+                        <li class="auto__body">
+                            <span class="auto__info-key">Body:</span>
+                            <span class="auto__info-value">Sedan</span>
+                        </li>
+                        <li class="auto__year">
+                            <span class="auto__info-key">Year:</span>
+                            <span class="auto__info-value">2019</span>
+                        </li>
+                        <li class="auto__fuel">
+                            <span class="auto__info-key">Fuel:</span>
+                            <span class="auto__info-value">Regular</span>
+                        </li>
+                        <li class="auto__transmission">
+                            <span class="auto__info-key">Transmission:</span>
+                            <span class="auto__info-value">Manual</span>
+                        </li>
+                        <li class="auto__comfort">
+                            <span class="auto__info-key">Comfort:</span>
+                            <span class="auto__info-value">ABS</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="automobile-list__item auto">
+                    <img src="images/car-4.jpeg" alt="car" class="auto__image"/>
+                    <ul class="auto__info">
+                        <li class="auto__country">
+                            <span class="auto__info-key">Country:</span>
+                            <span class="auto__info-value">Japan</span>
+                        </li>
+                        <li class="auto__make">
+                            <span class="auto__info-key">Make:</span>
+                            <span class="auto__info-value">Nissan</span>
+                        </li>
+                        <li class="auto__body">
+                            <span class="auto__info-key">Body:</span>
+                            <span class="auto__info-value">Sedan</span>
+                        </li>
+                        <li class="auto__year">
+                            <span class="auto__info-key">Year:</span>
+                            <span class="auto__info-value">2007</span>
+                        </li>
+                        <li class="auto__fuel">
+                            <span class="auto__info-key">Fuel:</span>
+                            <span class="auto__info-value">Regular</span>
+                        </li>
+                        <li class="auto__transmission">
+                            <span class="auto__info-key">Transmission:</span>
+                            <span class="auto__info-value">Manual</span>
+                        </li>
+                        <li class="auto__comfort">
+                            <span class="auto__info-key">Comfort:</span>
+                            <span class="auto__info-value">ABS</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="automobile-list__item auto">
+                    <img src="images/car-5.jpeg" alt="car" class="auto__image"/>
+                    <ul class="auto__info">
+                        <li class="auto__country">
+                            <span class="auto__info-key">Country:</span>
+                            <span class="auto__info-value">Germany</span>
+                        </li>
+                        <li class="auto__make">
+                            <span class="auto__info-key">Make:</span>
+                            <span class="auto__info-value">Volkswagen</span>
+                        </li>
+                        <li class="auto__body">
+                            <span class="auto__info-key">Body:</span>
+                            <span class="auto__info-value">Sedan</span>
+                        </li>
+                        <li class="auto__year">
+                            <span class="auto__info-key">Year:</span>
+                            <span class="auto__info-value">2018</span>
+                        </li>
+                        <li class="auto__fuel">
+                            <span class="auto__info-key">Fuel:</span>
+                            <span class="auto__info-value">Regular</span>
+                        </li>
+                        <li class="auto__transmission">
+                            <span class="auto__info-key">Transmission:</span>
+                            <span class="auto__info-value">Automatic</span>
+                        </li>
+                        <li class="auto__comfort">
+                            <span class="auto__info-key">Comfort:</span>
+                            <span class="auto__info-value">AC, ABS, Alarm</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="automobile-list__item auto">
+                    <img src="images/car-6.jpeg" alt="car" class="auto__image"/>
+                    <ul class="auto__info">
+                        <li class="auto__country">
+                            <span class="auto__info-key">Country:</span>
+                            <span class="auto__info-value">Germany</span>
+                        </li>
+                        <li class="auto__make">
+                            <span class="auto__info-key">Make:</span>
+                            <span class="auto__info-value">Volkswagen</span>
+                        </li>
+                        <li class="auto__body">
+                            <span class="auto__info-key">Body:</span>
+                            <span class="auto__info-value">Sedan</span>
+                        </li>
+                        <li class="auto__year">
+                            <span class="auto__info-key">Year:</span>
+                            <span class="auto__info-value">2015</span>
+                        </li>
+                        <li class="auto__fuel">
+                            <span class="auto__info-key">Fuel:</span>
+                            <span class="auto__info-value">Regular</span>
+                        </li>
+                        <li class="auto__transmission">
+                            <span class="auto__info-key">Transmission:</span>
+                            <span class="auto__info-value">Automatic</span>
+                        </li>
+                        <li class="auto__comfort">
+                            <span class="auto__info-key">Comfort:</span>
+                            <span class="auto__info-value">AC, ABS, Alarm</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="automobile-list__item auto">
+                    <img src="images/car-7.jpeg" alt="car" class="auto__image"/>
+                    <ul class="auto__info">
+                        <li class="auto__country">
+                            <span class="auto__info-key">Country:</span>
+                            <span class="auto__info-value">USA</span>
+                        </li>
+                        <li class="auto__make">
+                            <span class="auto__info-key">Make:</span>
+                            <span class="auto__info-value">Ford</span>
+                        </li>
+                        <li class="auto__body">
+                            <span class="auto__info-key">Body:</span>
+                            <span class="auto__info-value">Pickup</span>
+                        </li>
+                        <li class="auto__year">
+                            <span class="auto__info-key">Year:</span>
+                            <span class="auto__info-value">2015</span>
+                        </li>
+                        <li class="auto__fuel">
+                            <span class="auto__info-key">Fuel:</span>
+                            <span class="auto__info-value">Electric</span>
+                        </li>
+                        <li class="auto__transmission">
+                            <span class="auto__info-key">Transmission:</span>
+                            <span class="auto__info-value">Manual</span>
+                        </li>
+                        <li class="auto__comfort">
+                            <span class="auto__info-key">Comfort:</span>
+                            <span class="auto__info-value">AC, ABS, Alarm</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </main>
     <footer class="footer">
