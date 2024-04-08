@@ -3,6 +3,10 @@ input, select,
 label, button {
     cursor: pointer;
 }
+/*11*/
+option[label] {
+    color: gray;
+}
 
 /*10*/
 select,
