@@ -82,6 +82,7 @@ html {
     cursor: pointer;
 }
 
+/*30*/
 .menu-wrap .menu__item:not(:last-child) {
     margin-right: 30px;
 }
@@ -97,6 +98,7 @@ html {
     position: relative;
 }
 
+/*10*/
 .main-wrapper,
 .registration,
 .session {
@@ -108,42 +110,51 @@ html {
     left: 0;
 }
 
+/*10*/
 .registration, .session {
     align-items: center;
 }
 
+/*10*/
 .filter {
     flex: 1;
     overflow-y:  auto;
     border-right: 1px solid lightgray;
 }
 
+/*10*/
 .filter__item {
     padding: 15px;
 }
 
+/*20*/
 .filter__item:not(:last-child) {
     border-bottom: 1px solid lightgray;
 }
 
+/*10*/
 .filter__name {
     display: block;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
 
+/*10*/
 .filter__label {
     display: block;
 }
 
+/*10*/
 .filter__select {
     width: 100%;
 }
 
+/*10*/
 .filter__range-input {
     width: 49%;
 }
 
+/*10*/
 .filter__submit {
     width: 100%;
     border-radius: 5px;
@@ -154,6 +165,7 @@ html {
     background-color: black;
 }
 
+/*10*/
 .automobile-list {
     flex: 3;
     display: flex;
@@ -162,10 +174,12 @@ html {
     padding: 15px 15px 0;
 }
 
+/*10*/
 .automobile-list__item {
     margin-bottom: 5px;
 }
 
+/*10*/
 .auto {
     display: flex;
     align-items: center;
@@ -174,22 +188,28 @@ html {
     padding: 15px;
 }
 
+/*20*/
 .auto:hover {
     background: whitesmoke;
     cursor: pointer;
 }
 
+/*10*/
 .auto__image {
     width: 180px;
 }
 
+/*10*/
 .auto__info {
     padding-left: 15px;
 }
 
+/*20*/
 .auto__info > *:not(:last-child) {
     margin-bottom: 5px;
 }
+
+/*10*/
 
 .auto__info-key {
     font-weight: bold;
@@ -211,7 +231,7 @@ html {
     width: 100%;
 }
 
-/*1*/
+/*11*/
 .access-form__input::placeholder {
     text-transform: uppercase;
     color: gray;
